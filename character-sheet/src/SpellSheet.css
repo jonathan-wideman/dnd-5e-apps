@@ -1,0 +1,153 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-200: hsl(0, 0%, 96%);
+  --color-grey-400: hsl(0, 0%, 83%);
+  --color-black: hsl(0, 0%, 0%);
+}
+
+.spell-class {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.spell-class-box {
+  width: 4em;
+  height: 6em;
+  padding: 0 1em;
+  border: 1px solid var(--color-grey-400);
+  border-radius: 1em;
+}
+
+.spell-slots-label {
+  text-align: center;
+}
+
+.spell-slots {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spell-slot {
+  height: 6em;
+  padding: 0 1em;
+  border: 1px solid var(--color-grey-400);
+  border-radius: 1em;
+}
+
+.spell-level-divider.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12em;
+  margin: 0.8em 0;
+  padding: 0 1em;
+  background-color: var(--color-grey-200);
+  border-radius: 0.3em;
+}
+.spell-level-divider.slots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.spell-level-divider.level {
+  /* flex-grow: 1; */
+  /* text-align: center; */
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+/* .spell-level-divider.box::before {
+  content: "\200D";
+  display: inline;
+} */
+.spell-level-divider.box::before {
+  /* --inset: 0.2em; */
+  --inset: 15%;
+  position: absolute;
+  content: "\200D";
+  display: inline-block;
+  top: var(--inset);
+  bottom: var(--inset);
+  left: var(--inset);
+  right: var(--inset);
+  /* offset: 0.15em; */
+  border: 1px solid var(--color-grey-400);
+  border-radius: 0.2em;
+  /* rotate: 45deg; */
+}
+
+.spell-level-divider.box {
+  --size: 1.3em;
+  position: relative;
+  /* display: inline-block; */
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid var(--color-grey-400);
+  border-radius: 0.3em;
+  rotate: 45deg;
+  background-color: var(--color-white);
+}
+
+.spell-list {
+  /* --cols: auto; */
+  display: grid;
+  /* grid-template-columns: var(--cols); */
+  gap: 0.2em 0.2em;
+  align-items: center;
+}
+
+.cell {
+  /* font-size: 0.75rem; */
+  /* font-size: 0.625rem; */
+  font-size: 0.5rem;
+}
+
+.cell.underline {
+  border-bottom: 1px solid var(--color-grey-400);
+}
+
+
+.cell.box::before,
+.cell.circle::before,
+.cell.diamond::before,
+.cell.underline::before {
+  content: "\200D";
+  display: inline;
+}
+
+.cell.box {
+  width: 1.1em;
+  height: 1.1em;
+  border: 1px solid var(--color-grey-400);
+  border-radius: 0.3em;
+  margin: 0 auto;
+}
+
+.cell.circle {
+  width: 1.1em;
+  height: 1.1em;
+  border: 1px solid var(--color-grey-400);
+  border-radius: 99vmax;
+  margin: 0 auto;
+}
+
+.cell.diamond {
+  width: 1em;
+  height: 1em;
+  border: 1px solid var(--color-grey-400);
+  border-radius: 0.3em;
+  margin: 0 auto;
+  rotate: 45deg;
+}
+
+.cell.spell-header-row {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cell.fill {
+  background-color: var(--color-grey-200);
+}

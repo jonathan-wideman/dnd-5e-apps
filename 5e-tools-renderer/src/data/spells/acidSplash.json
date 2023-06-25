@@ -1,0 +1,193 @@
+{
+  "name": "Acid Splash",
+  "source": "PHB",
+  "page": 211,
+  "srd": true,
+  "basicRules": true,
+  "level": 0,
+  "school": "C",
+  "time": [
+    {
+      "number": 1,
+      "unit": "action"
+    }
+  ],
+  "range": {
+    "type": "point",
+    "distance": {
+      "type": "feet",
+      "amount": 60
+    }
+  },
+  "components": {
+    "v": true,
+    "s": true
+  },
+  "duration": [
+    {
+      "type": "instant"
+    }
+  ],
+  "entries": [
+    "You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage.",
+    "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+  ],
+  "scalingLevelDice": {
+    "label": "acid damage",
+    "scaling": {
+      "1": "1d6",
+      "5": "2d6",
+      "11": "3d6",
+      "17": "4d6"
+    }
+  },
+  "damageInflict": ["acid"],
+  "savingThrow": ["dexterity"],
+  "miscTags": ["SCL", "SGT"],
+  "areaTags": ["ST", "MT"],
+  "classes": {
+    "fromClassList": [
+      {
+        "name": "Sorcerer",
+        "source": "PHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "PHB"
+      },
+      {
+        "name": "Artificer (Revisited)",
+        "source": "UAArtificerRevisited"
+      },
+      {
+        "name": "Artificer",
+        "source": "TCE"
+      }
+    ],
+    "fromClassListVariant": [
+      {
+        "name": "Druid",
+        "source": "PHB",
+        "definedInSource": "UAClassFeatureVariants"
+      }
+    ],
+    "fromSubclass": [
+      {
+        "class": {
+          "name": "Cleric",
+          "source": "PHB"
+        },
+        "subclass": {
+          "name": "Arcana Domain",
+          "shortName": "Arcana",
+          "source": "SCAG"
+        }
+      },
+      {
+        "class": {
+          "name": "Fighter",
+          "source": "PHB"
+        },
+        "subclass": {
+          "name": "Eldritch Knight",
+          "shortName": "Eldritch Knight",
+          "source": "PHB"
+        }
+      },
+      {
+        "class": {
+          "name": "Rogue",
+          "source": "PHB"
+        },
+        "subclass": {
+          "name": "Arcane Trickster",
+          "shortName": "Arcane Trickster",
+          "source": "PHB"
+        }
+      }
+    ]
+  },
+  "races": [
+    {
+      "name": "Elf (High)",
+      "source": "PHB",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (High; Aereni)",
+      "source": "UAWGE",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Elf (High; Valenar)",
+      "source": "UAWGE",
+      "baseName": "Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Genasi (Water)",
+      "source": "MPMM",
+      "baseName": "Genasi",
+      "baseSource": "MPMM"
+    },
+    {
+      "name": "Kobold",
+      "source": "MPMM"
+    },
+    {
+      "name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+      "source": "SCAG",
+      "baseName": "Half-Elf",
+      "baseSource": "PHB"
+    },
+    {
+      "name": "Merfolk (Ixalan; Blue)",
+      "source": "PSX",
+      "baseName": "Merfolk (Ixalan)",
+      "baseSource": "PSX"
+    },
+    {
+      "name": "Merfolk (Zendikar; Ula Creed)",
+      "source": "PSZ",
+      "baseName": "Merfolk (Zendikar)",
+      "baseSource": "PSZ"
+    }
+  ],
+  "optionalfeatures": [
+    {
+      "name": "Pact of the Tome",
+      "source": "PHB",
+      "featureType": ["PB"]
+    }
+  ],
+  "backgrounds": [
+    {
+      "name": "Simic Scientist",
+      "source": "GGR"
+    }
+  ],
+  "feats": [
+    {
+      "name": "Aberrant Dragonmark",
+      "source": "ERLW"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "TCE"
+    },
+    {
+      "name": "Artificer Initiate",
+      "source": "UA2020Feats"
+    },
+    {
+      "name": "Initiate of High Sorcery",
+      "source": "DSotDQ"
+    },
+    {
+      "name": "Magic Initiate",
+      "source": "PHB"
+    }
+  ]
+}
