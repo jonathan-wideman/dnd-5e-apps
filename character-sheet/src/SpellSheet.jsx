@@ -16,11 +16,11 @@ export default function SpellSheet() {
       {/* <SpellSlots /> */}
 
       <SpellLevelDividerRow level={0} />
-      <SpellList count={10}/>
+      <SpellList count={8}/>
       <SpellLevelDividerRow level={1} />
-      <SpellList count={15}/>
+      <SpellList count={18}/>
       <SpellLevelDividerRow level={2} />
-      <SpellList count={15}/>
+      <SpellList count={18}/>
     </>
   )
 }
