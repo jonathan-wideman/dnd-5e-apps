@@ -7,19 +7,20 @@ import SpellSlots from './SpellSlots'
 export default function SpellSheet() {
   return (
     <>
-      <div>
+      {/* <div>
         Character name
-      </div>
+      </div> */}
 
       <SpellClass />
 
       {/* <SpellSlots /> */}
 
+      <SpellLevelDividerRow level={0} />
+      <SpellList count={10}/>
       <SpellLevelDividerRow level={1} />
-      <SpellList count={20}/>
-
+      <SpellList count={15}/>
       <SpellLevelDividerRow level={2} />
-      <SpellList count={20}/>
+      <SpellList count={15}/>
     </>
   )
 }
