@@ -1,7 +1,9 @@
 :root {
   --color-white: hsl(0, 0%, 100%);
-  --color-grey-200: hsl(0, 0%, 96%);
-  --color-grey-400: hsl(0, 0%, 83%);
+  /* --color-grey-200: hsl(0, 0%, 96%); */
+  --color-grey-200: hsl(0, 0%, 83%);
+  /* --color-grey-400: hsl(0, 0%, 83%); */
+  --color-grey-400: hsl(0, 0%, 70%);
   --color-black: hsl(0, 0%, 0%);
 
   --border-400: 1px solid var(--color-grey-400);
