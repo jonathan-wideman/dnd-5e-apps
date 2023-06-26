@@ -57,7 +57,7 @@
 .spell-class-values {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   gap: 1rem;
 }
 
@@ -98,6 +98,16 @@
   font-weight: bold;
   text-transform: uppercase;
   /* background-color: var(--color-grey-200); */
+}
+
+.spell-class-box-label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 7em;
+  font-size: var(--fs-xs);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .spell-slots-label {
