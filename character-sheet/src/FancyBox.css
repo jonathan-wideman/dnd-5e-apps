@@ -3,6 +3,7 @@
   display: flex;
   align-items: stretch;
   height: 4em;
+  margin: 0 2.1em;
 }
 
 .fancy-box-cell {
@@ -40,10 +41,10 @@
   height: calc(100% / 1.416);
   aspect-ratio: 1/1;
   /* top: 14.4%; */
-  translate: 50%;
   rotate: 45deg;
   border: var(--border-400);
   border-radius: 1em;
+  margin: -1.9em;
 }
 
 .fancy-box-cell-end::before {
@@ -57,9 +58,9 @@
 }
 
 .fancy-box-cell-left {
-  translate: 55%;
+  /* translate: 55%; */
 }
 
 .fancy-box-cell-right {
-  translate: -55%;
+  /* translate: -55%; */
 }
