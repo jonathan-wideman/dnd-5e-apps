@@ -1,0 +1,13 @@
+.motif {
+  position: absolute;
+  /* z-index: -100; */
+  width: 10rem;
+  top: 0.9rem;
+  left: 0;
+  /* mix-blend-mode: multiply; */
+  /* color: red; */
+  --color-grey-200: #d4d4d4;
+  --color-grey-400: #b3b3b3;
+  /* background-color:blue; */
+  /* opacity: 0.26; */
+}

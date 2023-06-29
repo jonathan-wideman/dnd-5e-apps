@@ -1,4 +1,5 @@
 import FancyBox from './FancyBox'
+import Motif from './Motif'
 import SpellClass from './SpellClass'
 import SpellLevelDividerRow from './SpellLevelDividerRow'
 import SpellList from './SpellList'
@@ -8,6 +9,8 @@ import SpellSlots from './SpellSlots'
 export default function SpellSheet() {
   return (
     <>
+      <Motif />
+
       {/* <FancyBox>Character name</FancyBox> */}
 
       <SpellClass />

@@ -3,7 +3,7 @@
   display: flex;
   align-items: stretch;
   height: 4em;
-  margin: 0 2.1em;
+  margin: 0 2.4em;
 }
 
 .fancy-box-cell {
@@ -24,7 +24,7 @@
 
 .fancy-box-cell-middle::before {
   position: absolute;
-  --inset: 0.3em;
+  --inset: 0.26rem;
   content: '\200D';
   inset: var(--inset);
   /* border-top: var(--border-white); */
@@ -44,11 +44,11 @@
   rotate: 45deg;
   border: var(--border-400);
   border-radius: 1em;
-  margin: -1.9em;
+  margin: -2.2em;
 }
 
 .fancy-box-cell-end::before {
-  --inset: 0.3em;
+  --inset: 0.26rem;
   position: absolute;
   content: '\200D';
   inset: var(--inset);

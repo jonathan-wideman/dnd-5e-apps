@@ -44,7 +44,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  margin-left: 3rem;
 }
 
 .spell-class-name {
@@ -62,6 +63,10 @@
   gap: 0.5rem;
 }
 
+.spell-class-values.grow {
+  flex-grow: 1;
+}
+
 .spell-class-box::before {
   z-index: -10;
   content: "\200D";
@@ -69,15 +74,16 @@
   display: inline-block;
   inset: 0rem;
   border-radius: 0.5rem;
-  background-color: var(--color-grey-200);
+  background-color: var(--color-white);
+  /* background-color: var(--color-grey-200); */
 }
 
-.spell-class-box::after {
+.spell-class-box:not(.simple)::after {
   z-index: -5;
   content: "\200D";
   position: absolute;
   display: inline-block;
-  inset: 0.3rem;
+  inset: 0.26rem;
   border-radius: 0.3rem;
   border: var(--border-400);
   background-color: var(--color-white);
@@ -90,15 +96,28 @@
   justify-content: center;
   align-items: flex-end;
   width: 5rem;
-  height: 3rem;
+  height: 2.9rem;
   padding: 0.5em 1em;
-  /* border: var(--border-400); */
+  border: var(--border-400);
   border-radius: 0.5rem;
   /* font-size: var(--fs-sm); */
   font-size: var(--fs-xs);
   font-weight: bold;
   text-transform: uppercase;
   /* background-color: var(--color-grey-200); */
+}
+
+.spell-class-box.short {
+  height: 1.4rem;
+}
+
+.spell-class-box.sm {
+  width: 3rem;
+}
+
+.spell-class-box.grow {
+  width: unset;
+  flex-grow: 1;
 }
 
 .spell-class-box-label {
@@ -133,6 +152,7 @@
   align-items: center;
   margin: 0.8rem 0;
 }
+
 .spell-level-divider.row.center {
   justify-content: center;
 }
